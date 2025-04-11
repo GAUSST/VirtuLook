@@ -413,6 +413,10 @@ footer {
     font-size: 1.5rem;
     margin-right: 5%;
   }
+  header .cta-btn {
+    padding: 10px 5px;
+    font-size: .7rem;
+  }
 }
 @media (min-width: 769px) {
   .menu-toggle {
