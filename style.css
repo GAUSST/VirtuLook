@@ -413,14 +413,16 @@ footer {
     font-size: 1.5rem;
     margin-right: 5%;
   }
-  header .cta-btn {
+  header .btn-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn-container .cta-btn{
     padding: 10px 5px;
     font-size: .7rem;
-    display: flex;
-    gap: 10px;
     margin-bottom: 10px;
-  }
-  header #flyer-download{
   }
 }
 @media (min-width: 769px) {
