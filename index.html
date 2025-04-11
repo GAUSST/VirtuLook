@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="essai virtuel Maroc, service image modèle AI, outils vendeur mode Maroc" />
+    <title>VirtuLook Morocco - Design Virtuel</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="dynamic.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <div class="logo" onclick="reloadAndScrollTop()">VirtuLook Maroc</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a id="nav-accueil" href="#accueil">Accueil</a></li>
+        <li><a id="nav-fonctionnement" href="#fonctionnement">Fonctionnement</a></li>
+        <li><a id="nav-tarifs" href="#tarifs">Tarifs</a></li>
+        <li><a id="nav-galerie" href="#galerie">Galerie</a></li>
+        <li><a id="nav-temoignages" href="#temoignages">Témoignages</a></li>
+        <li><a id="nav-contact" href="#contact">Contact</a></li>
+        <!-- Language Switcher -->
+        <li class="lang-switch">
+          <a href="#" onclick="switchLanguage('fr')" title="Français">
+            🇫🇷 FR
+          </a>
+          <a href="#" onclick="switchLanguage('ar')" title="عربي">
+            🇲🇦 عربي
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Scroll-to-Top Arrow -->
+    <div id="scrollToTop" onclick="scrollToSection('accueil')">&#8679;</div>
+
+    <!-- Section Héro -->
+    <header id="accueil">
+      <div class="hero-content container">
+        <h1 id="typed-title"></h1>
+        <p id="hero-slogan" class="slogan">Pas de mannequin ? Aucun souci.</p>
+        <p id="hero-subheadline" class="subheadline">
+          Gagnez du temps et réalisez des économies grâce à des visuels de modèles générés par notre IA, parfaitement adaptés à votre gamme de produits.
+        </p>
+        <button id="hero-cta" class="cta-btn" onclick="scrollToSection('contact')">
+          Essayez 2 images gratuitement
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Section Comment Ça Marche -->
+      <section id="fonctionnement" class="container">
+        <h2 id="sect-fonctionnement">Comment ça marche</h2>
+        <div class="etapes">
+          <div class="etape">
+            <h3 id="etape-1-title">Étape 1</h3>
+            <p id="etape-1-text">Envoyez une photo claire de votre produit</p>
+          </div>
+          <div class="etape">
+            <h3 id="etape-2-title">Étape 2</h3>
+            <p id="etape-2-text">Choisissez votre plan et options d'image</p>
+          </div>
+          <div class="etape">
+            <h3 id="etape-3-title">Étape 3</h3>
+            <p id="etape-3-text">Recevez votre image de modèle en 24–48 heures</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Tarifs -->
+      <section id="tarifs" class="container">
+        <h2 id="sect-tarifs">Tarifs (par image)</h2>
+        <div id="global-offer" class="global-offer">
+          🎁 2 images gratuites + -50% sur les 5 premières
+        </div>
+        <div class="tarifs-cartes">
+          <!-- Basique -->
+          <div class="carte">
+            <div class="tarif-header">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <h3 id="tarif-basique">Basique</h3>
+              <p class="prix">80 MAD</p>
+            </div>
+            <ul>
+              <li id="basique-1"><span>AI creative direction (angles &amp; vibe choisis par nous)</span></li>
+              <li id="basique-2"><span>Arrière-plan de style studio</span></li>
+              <li id="basique-3"><span>Image soignée et professionnelle</span></li>
+              <li id="basique-4"><span>1 révision</span></li>
+              <li id="basique-5"><span>⏱ Livraison sous 48 heures</span></li>
+            </ul>
+          </div>
+          <!-- Normale -->
+          <div class="carte">
+            <div class="tarif-header">
+              <i class="fas fa-star"></i>
+              <h3 id="tarif-normale">Normale</h3>
+              <p class="prix">170 MAD</p>
+            </div>
+            <ul>
+              <li id="normale-1"><span>Pose personnalisée (face, profil, en mouvement...)</span></li>
+              <li id="normale-2"><span>Arrière-plan sur mesure</span></li>
+              <li id="normale-3"><span>Style uniforme pour votre marque</span></li>
+              <li id="normale-4"><span>2 révisions</span></li>
+              <li id="normale-5"><span>⏱ Livraison sous 24 heures</span></li>
+            </ul>
+          </div>
+          <!-- Premium -->
+          <div class="carte">
+            <div class="tarif-header">
+              <i class="fa-solid fa-gem"></i>
+              <h3 id="tarif-premium">Premium</h3>
+              <p class="prix">360 MAD</p>
+            </div>
+            <ul>
+              <li id="premium-1"><span>Personnalisation complète du modèle virtuel</span></li>
+              <li id="premium-2"><span>Arrière-plans haute qualité</span></li>
+              <li id="premium-3"><span>Rendu + retouches premium</span></li>
+              <li id="premium-4"><span>4 révisions incluses</span></li>
+              <li id="premium-5"><span>🚀 Livraison prioritaire</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>           
+
+      <!-- Section Galerie -->
+      <section id="galerie" class="container">
+        <h2 id="sect-galerie">Galerie Visuelle</h2>
+        <div class="gallery-single">
+          <div class="base-image">
+            <img src="./assets/images/b.jpeg" alt="Image de Base" />
+          </div>
+          <div class="gallery-arrow">&#8595;</div>
+          <div class="outputs">
+            <div class="output-image">
+              <img src="./assets/images/r1.png" alt="Sortie 1" />
+            </div>
+            <div class="output-image">
+              <img src="./assets/images/r2.png" alt="Sortie 2" />
+            </div>
+            <div class="output-image">
+              <img src="./assets/images/r3.png" alt="Sortie 3" />
+            </div>
+            <div class="output-image">
+              <img src="./assets/images/r4.png" alt="Sortie 4" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Témoignages & Bénéfices -->
+      <section id="temoignages" class="container">
+        <h2 id="sect-temoignages">Témoignages & Bénéfices</h2>
+        <p id="testimonial" class="temoignage">"Cela m'a permis d'économiser 50% par mois sur les frais de modèles."</p>
+        <ul class="benefices">
+          <li id="benefice-1"><b>Abordable :</b> une fraction du prix d'une séance photo pour mannequins.</li>
+          <li id="benefice-2"><b>Livraison rapide :</b> délai d'exécution de 24 à 48 heures.</li>
+          <li id="benefice-3"><b>Évolutif :</b> gérez vos articles sans recruter de modèles.</li>
+          <li id="benefice-4"><b>Offre de bienvenue :</b> 🎁 2 premières images GRATUITES et 💥 50 % de réduction sur vos 5 prochaines images.</li>
+        </ul>
+      </section>
+
+      <!-- Section Contact / CTA -->
+      <section id="contact" class="container">
+        <h2 id="sect-contact">Contactez-nous</h2>
+        <p id="contact-text">Passez commande directement ou demandez votre essai gratuit dès maintenant !</p>
+        <div>
+          <a class="bouton" href="https://wa.me/+212779043150" target="_blank">Commande WhatsApp</a>
+        </div>
+        <form id="formEssaiGratuit" action="https://formsubmit.co/your-email@example.com" method="POST">
+          <h3 id="form-title">Demandez votre essai gratuit</h3>
+          <input type="text" name="nom" placeholder="Votre nom" required />
+          <input type="email" name="email" placeholder="Votre email" required />
+          <textarea name="message" rows="4" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+          <input type="text" name="_honey" style="display:none;">
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit">Envoyer</button>
+        </form>   
+        <div id="success-message" style="display:none;">Merci ! Votre demande a été envoyée avec succès.</div>     
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy;Copyright 2025 VirtuLook Maroc. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
